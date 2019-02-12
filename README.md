@@ -7,7 +7,7 @@ The new user answers a questionnaire and each answer is assigned a numeric value
 1.  * Go to New Survey or to JSON API with all of the current user names, photos and answers.
    
 * Example:
-![Results Image](https://github.com/fedevillalp/FriendFinder/tree/master/images/1.png)
+![Results Image](https://github.com/fedevillalp/FriendFinder/blob/master/images/1.png)
 
 2.  * Or go to the API to receive JSON with all of the current user names, photos and answers.
    
