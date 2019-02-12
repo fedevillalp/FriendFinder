@@ -16,6 +16,6 @@ require('./app/routing/apiRoutes.js')(app);
 
 // Sttart Server
 // =============================================================
-app.listen(PORT, function() {
+app.listen(process.env.PORT || PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
