@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars - Express</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+        select.form-control {
+              width: 150px;
+              font-size: 14px
+              /* border: 100px solid black; */
+            }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/ ">Friend Finder</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Button to go to /api/routes. Provids friends JSON list -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="api/friends">API Friend List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form -->
+    <br>
+    <main role="main" class="container">
+
+
+        <div class="jumbotron">
+            <h2>Complete the survey and we'll find your best match...</h2>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="email" class="form-control" id="newName" aria-describedby="nameHelp" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Link to Foto</label>
+                <input type="email" class="form-control" id="newFoto" aria-describedby="linkHelp" placeholder="Enter link to picture">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">1. Do you think knowledge is greater than wisdom?</label>
+                <select class="form-control" id="Q-one">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">2. Do you think people are the way they are because they were
+                    born that way?</label>
+                <select class="form-control" id="Q-two">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">3. If you could go to a place no human has ever gone, with a
+                    chance you might die before getting home, would you?</label>
+                <select class="form-control" id="Q-three">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">4. If you were a world leader do you think the world would be a
+                    better place?</label>
+                <select class="form-control" id="Q-four">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">5. If you could change things you did before, would you?</label>
+                <select class="form-control" id="Q-five">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">6. Do you believe in god?</label>
+                <select class="form-control" id="Q-six">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">7. Do you believe in Socialism?</label>
+                <select class="form-control" id="Q-seven">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">8. Can you run 6 miles?</label>
+                <select class="form-control" id="Q-eight">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">9. Are you good at math?</label>
+                <select class="form-control" id="Q-nine">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">10. Do you like criptography?</label>
+                <select class="form-control" id="Q-ten">
+                    <option>1 (Agree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Disagree)</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit" id="form-button" class="btn btn-primary btn-lg btn-block">Find Match</button>
+
+        </div>
+        * Questions 1-5 taken from: Nicodemus-Underkoffler.
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalPhoto" src="" alt="">
+                        <h2><div id="modalName"></div></h2>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+    </main>
+
+    <script type="text/javascript">
+
+        $("#form-button").on("click", function (event) {
+            event.preventDefault();
+            // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+            //searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+            var filter = /\d/;
+
+            var newFriend = {
+                "name": $("#newName").val().trim(),
+                "photo": $("#newFoto").val().trim(),
+                scores: [parseInt($("#Q-one").val().match(filter)[0]),
+                parseInt($("#Q-two").val().trim().match(filter)[0]),
+                parseInt($("#Q-three").val().trim().match(filter)[0]),
+                parseInt($("#Q-four").val().trim().match(filter)[0]),
+                parseInt($("#Q-five").val().trim().match(filter)[0]),
+                parseInt($("#Q-six").val().trim().match(filter)[0]),
+                parseInt($("#Q-seven").val().trim().match(filter)[0]),
+                parseInt($("#Q-eight").val().trim().match(filter)[0]),
+                parseInt($("#Q-nine").val().trim().match(filter)[0]),
+                parseInt($("#Q-ten").val().trim().match(filter)[0])]
+            };
+
+            $.post("/api/friends", newFriend, function (data) {
+                console.log('PRESSED POST!');
+                console.log(data);
+                $("#modalName").text(data.name);
+                $("#modalPhoto").attr("src", data.photo)
+                $("#exampleModal").modal('toggle')
+            });
+
+        });
+
+    </script>
+
+    <!-- <div id="results-modal" class="modal fade in" role="dialog" style="display: block; padding-left: 0px;">
+        <div class="modal-dialog">
+    
+    
+    <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h2 class="modal-title"><strong>Best Match</strong></h2>
+            </div>
+            <div class="modal-body">
+              <h2 id="match-name">chrio</h2>
+              <img id="match-img" src="jlhlkb" alt="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+</div> -->
+
+</body>
+
+
+</html>
