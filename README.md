@@ -16,10 +16,10 @@ The new user answers a questionnaire and each answer is assigned a numeric value
 3. Answer Quiestionnaire.
    
 ![Results Image](https://github.com/fedevillalp/FriendFinder/blob/master/images/2.png)
+![Results Image](https://github.com/fedevillalp/FriendFinder/blob/master/images/3.png)
 
-![ResultsImage]
-(https://github.com/fedevillalp/FriendFinder/blob/master/images/3.png)
 
 4. Submitt Questionnaire and get your best match.
    
 ![Results Image](https://github.com/fedevillalp/FriendFinder/blob/master/images/4.png)
+
