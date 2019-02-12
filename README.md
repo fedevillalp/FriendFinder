@@ -9,7 +9,7 @@ The new user answers a questionnaire and each answer is assigned a numeric value
 
 ![Results Image](https://github.com/fedevillalp/FriendFinder/blob/master/images/1.png)
 
-2.  * Or go to the API to receive JSON with all of the current user names, photos and answers.
+2.  Or go to the API to receive JSON with all of the current user names, photos and answers.
    
 ![Results Image](https://github.com/fedevillalp/FriendFinder/blob/master/images/5.png)
 
